@@ -33,7 +33,7 @@ class JunosLexer(RegexLexer):
             (r'(lo|em|me|ae)\d+(\.\d+)?', Name.Constant),  # Interface names
             (r'[a-z]{2,3}-\d+/\d+/\d+(\.\d+)?', Name.Constant),
             (r'[\{\};]', Punctuation),
-            (r'^\s*[-\w]+', Keyword),
+            (r'^[-\w]+', Keyword),
             (r'\s+', Text),
             (r'\d+', Number),
             (r'\S+', Text),
